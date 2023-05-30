@@ -1,3 +1,5 @@
+//@media only screen and (min-width: 768px);
+
 // Wyrownanie, pozycjowanie
 .center-text {
 	text-align: center;
@@ -105,6 +107,33 @@
 	-moz-border-radius: @radius;
 	-webkit-border-radius: @radius;
 }
+
+// podstawowe przejscie 0.2s
+.basic-transition {
+	transition: all 0.2s ease-in-out;
+}
+
+// Zmienne przjscie
+.variable-transition(@length) {
+	transition: all @length ease-in-out;
+}
+
+// Translate 3D
+.translate3d(@move-x;@move-y;@move-z) {
+	transform: translateX(@move-x);
+	transform: translateY(@move-y);
+	transform: translateZ(@move-z);
+}
+
+//Nakladka
+.dark-overlay {
+	content: "";
+	z-index: 0;
+	.absolute-one-hundred-size;
+	background: none repeat 0 0 rgba(30, 30, 30, 0.5);
+}
+
+
 
 
 
